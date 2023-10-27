@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"> 
+<head>    
+<meta charset="UTF-8">
+<title>مشروع تقنية رقمية</title>
+
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+  
+  body {
+  background-color: rgb(25, 26, 29);
+  justify-content: center;
+      margin: 0;
+    font-family: 'Tajawal', sans-serif;
+    color: #f2f2f2;
+  }
+  .button {
+--color: #00A97F;
+padding: 0.8em 1.7em;
+background-color: transparent;
+border-radius: .3em;
+position: relative;
+overflow: hidden;
+float: right;
+cursor: pointer;
+transition: .5s;
+font-weight: 400;
+font-size: 17px;
+border: 1px solid;
+font-family: inherit;
+text-transform: uppercase;
+color: var(--color);
+z-index: 1;
+}
+
+.button::before, .button::after {
+content: '';
+display: block;
+width: 50px;
+height: 50px;
+transform: translate(-50%, -50%);
+position: absolute;
+border-radius: 50%;
+z-index: -1;
+background-color: var(--color);
+transition: 1s ease;
+}
+
+.button::before {
+top: -1em;
+left: -1em;
+}
+
+.button::after {
+left: calc(100% + 1em);
+top: calc(100% + 1em);
+}
+
+.button:hover::before, .button:hover::after {
+height: 410px;
+width: 410px;
+}
+
+.button:hover {
+color: rgb(10, 25, 30);
+}
+
+.button:active {
+filter: brightness(.8);
+}
+
+  .w9f {
+      font-family: 'Tajawal', sans-serif;
+    color: #f2f2f2;
+    font-size: 23px;   
+  }
+  
+  .topnav {
+   
+    --color: #00A97F;
+padding: 0.8em 1.7em;
+background-color: #3b6567;
+border-radius: .3em;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+transition: .5s;
+font-weight: 400;
+font-size: 17px;
+border: 1px solid;
+font-family: inherit;
+text-transform: uppercase;
+color: var(--color);
+z-index: 1;
+  }
+  .topnav:hover::before, .topnav:hover::after {
+height: 410px;
+width: 410px;
+}
+.topnav::before, .topnav::after {
+content: '';
+display: block;
+width: 50px;
+height: 50px;
+transform: translate(-50%, -50%);
+position: absolute;
+border-radius: 50%;
+z-index: -1;
+background-color: var(--color);
+transition: 1s ease;
+}
+
+.topnav::before {
+top: -1em;
+left: -1em;
+}
+
+.topnav::after {
+left: calc(100% + 1em);
+top: calc(100% + 1em);
+}
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: rgb(10, 25, 30);
+  }
+  
+  .topnav:active {
+filter: brightness(.8);
+}
+
+  .topnav a.split {
+    float: right;
+    background-color: #04AA6D;
+    color: white;
+  }
+  .button2 {
+--color: #3b6567;
+padding: 0.8em 1.7em;
+background-color: transparent;
+border-radius: .3em;
+position: relative;
+overflow: hidden;
+float: left;
+cursor: pointer;
+transition: .5s;
+font-weight: 400;
+font-size: 17px;
+border: 1px solid;
+font-family: inherit;
+text-transform: uppercase;
+color: var(--color);
+z-index: 1;
+}
+.button2 .spilt {
+float: right;
+padding: 14px 16px;
+}
+.button3{
+overflow: hidden;
+}
+.button2::before, .button2::after {
+content: '';
+display: block;
+width: 50px;
+height: 50px;
+transform: translate(-50%, -50%);
+position: absolute;
+border-radius: 50%;
+z-index: -1;
+background-color: var(--color);
+transition: 1s ease;
+}
+
+.button2::before {
+top: -1em;
+left: -1em;
+}
+
+.button2::after {
+left: calc(100% + 1em);
+top: calc(100% + 1em);
+}
+
+.button2:hover::before, .button2:hover::after {
+height: 410px;
+width: 410px;
+}
+
+.button2:hover {
+color: rgb(10, 25, 30);
+}
+
+.button2:active {
+filter: brightness(.8);
+}
+.sorh{
+border-radius: 50%;
+}
+.input-group {
+ position: relative;
+}
+
+.input {
+ border: solid 1.5px #9e9e9e;
+ font-family: inherit;
+ border-radius: 1rem;
+ background: none;
+ padding: 1rem;
+ font-size: 15px;
+ color: #f5f5f5;
+ transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.user-label {
+ position: absolute;
+ right: 15px;
+ color: #e8e8e8;
+ pointer-events: none;
+ transform: translateY(1rem);
+ transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.input:focus, input:valid {
+ outline: none;
+ border: 1.5px solid #1a73e8;
+}
+
+.input:focus ~ label, input:valid ~ label {
+ transform: translateY(-50%) scale(0.8);
+ background-color: #212121;
+ padding: 0 .2em;
+ color: #2196f3;
+}
+</style>
+<body>
+  <div class="topnav">
+    <a class="button2" href="/"><i class="fa-solid fa-house"></i>الرئيسية</a>
+    <a class="button3"> </a>
+    <a class="button2" href="/3na.html"><i class="fa-solid fa-address-card"></i>عنا</a>
+    <a class="button3"> </a>
+    <a class="button" href="mthal@gmail.com"><i class="fa-solid fa-envelope"></i>تواصل معنا</a>
+    <a class="button3"> </a>
+    <a class="button"><i class="fa-solid fa-user-plus"></i>تسجيل دخول</a>
+    <a class="button3"> </a>
+    <a href="#tsgel" class="button"><i class="fa-solid fa-user"></i>تسجيل </a>
+  </div>
+     <h1 id="3na">يوسف صالح الحربي</h1>
+     <p class="w9f">1/1</p>
+   <div>
+    <a class="button" href="http://google.com" target="_blank" >البلانك</a>
+    <a class="button" href="http://google.com" target="_self" >السيلف</a>
+   </div>
+    
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    <img src="/bacc.png">
+  </div>
+   <p id="tmal7fd"></p>
+   <p id="tmalft7"></p>
+   <div class="input-group">
+    <input required="" type="text" name="text" autocomplete="off" class="input" id="alshy">
+    <label class="user-label">اسمك</label>
+    <br>
+  <select id="alshy2" name="فصلك">
+    <option value="1/1">1/1</option>
+    <option value="1/2">1/2</option>
+    <option value="1/3">1/3</option>
+    <option value="1/4">1/4</option>
+    <option value="1/5">1/5</option>
+    <option value="1/6">1/6</option>
+  </select>
+  </div>
+  
+   <br>
+   <button onclick="hfd()" class="button">حفظ!</button>
+   <script>
+var m7fod = localStorage("m7fod")
+ function hfd(){
+  var qrd = document.getElementById("alshy").value;
+  var qrd2 = document.getElementById("alshy2").value;
+  localStorage.setItem("7fd", qrd, qrd2);
+  document.getElementById("tmal7fd").innerHTML = qrd, qrd2;
+ }
+ function get(){
+  localStorage.getItem("m7fod");
+  document.getElementById("tmal7fd").innerHTML = m7fod;
+
+ }
+
+   </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

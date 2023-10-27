@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"> 
+<head>    
+<meta charset="UTF-8">
+<title>يوسف الحربي</title>
+
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+  
+  body {
+  background-color: rgb(25, 26, 29);
+   
+      margin: 0;
+    font-family: 'Tajawal', sans-serif;
+    color: #f2f2f2;
+  }
+  .button {
+--color: #00A97F;
+padding: 0.8em 1.7em;
+background-color: transparent;
+border-radius: .3em;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+transition: .5s;
+font-weight: 400;
+font-size: 17px;
+border: 1px solid;
+font-family: inherit;
+text-transform: uppercase;
+color: var(--color);
+z-index: 1;
+}
+
+.button::before, .button::after {
+content: '';
+display: block;
+width: 50px;
+height: 50px;
+transform: translate(-50%, -50%);
+position: absolute;
+border-radius: 50%;
+z-index: -1;
+background-color: var(--color);
+transition: 1s ease;
+}
+
+.button::before {
+top: -1em;
+left: -1em;
+}
+
+.button::after {
+left: calc(100% + 1em);
+top: calc(100% + 1em);
+}
+
+.button:hover::before, .button:hover::after {
+height: 410px;
+width: 410px;
+}
+
+.button:hover {
+color: rgb(10, 25, 30);
+}
+
+.button:active {
+filter: brightness(.8);
+}
+
+  .w9f {
+      font-family: 'Tajawal', sans-serif;
+    color: #f2f2f2;
+    font-size: 23px;   
+  }
+  
+  .topnav {
+   
+    --color: #00A97F;
+padding: 0.8em 1.7em;
+background-color: #3b6567;
+border-radius: .3em;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+transition: .5s;
+font-weight: 400;
+font-size: 17px;
+border: 1px solid;
+font-family: inherit;
+text-transform: uppercase;
+color: var(--color);
+z-index: 1;
+  }
+  .topnav:hover::before, .topnav:hover::after {
+height: 410px;
+width: 410px;
+}
+.topnav::before, .topnav::after {
+content: '';
+display: block;
+width: 50px;
+height: 50px;
+transform: translate(-50%, -50%);
+position: absolute;
+border-radius: 50%;
+z-index: -1;
+background-color: var(--color);
+transition: 1s ease;
+}
+
+.topnav::before {
+top: -1em;
+left: -1em;
+}
+
+.topnav::after {
+left: calc(100% + 1em);
+top: calc(100% + 1em);
+}
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: rgb(10, 25, 30);
+  }
+  
+  .topnav:active {
+filter: brightness(.8);
+}
+
+  .topnav a.split {
+    float: right;
+    background-color: #04AA6D;
+    color: white;
+  }
+  .button2 {
+--color: #3b6567;
+padding: 0.8em 1.7em;
+background-color: transparent;
+border-radius: .3em;
+position: relative;
+overflow: hidden;
+float: left;
+cursor: pointer;
+transition: .5s;
+font-weight: 400;
+font-size: 17px;
+border: 1px solid;
+font-family: inherit;
+text-transform: uppercase;
+color: var(--color);
+z-index: 1;
+}
+.button2 .spilt {
+float: right;
+padding: 14px 16px;
+}
+.button3{
+overflow: hidden;
+}
+.button2::before, .button2::after {
+content: '';
+display: block;
+width: 50px;
+height: 50px;
+transform: translate(-50%, -50%);
+position: absolute;
+border-radius: 50%;
+z-index: -1;
+background-color: var(--color);
+transition: 1s ease;
+}
+
+.button2::before {
+top: -1em;
+left: -1em;
+}
+
+.button2::after {
+left: calc(100% + 1em);
+top: calc(100% + 1em);
+}
+
+.button2:hover::before, .button2:hover::after {
+height: 410px;
+width: 410px;
+}
+
+.button2:hover {
+color: rgb(10, 25, 30);
+}
+
+.button2:active {
+filter: brightness(.8);
+}
+
+</style>
+<body>
+  <div class="topnav">
+    <a class="button2" href="#home"><i class="fa-solid fa-house"></i>الرئيسية</a>
+    <a class="button3"> </a>
+    <a class="button2" href="/twa9l.html"><i class="fa-solid fa-address-card"></i>عنا</a>
+    <a class="button3"> </a>
+    <a class="button" href="/pages/twa9l.html"><i class="fa-solid fa-envelope"></i>تواصل معنا</a>
+    <a class="button3"> </a>
+    <a class="button"><i class="fa-solid fa-user-plus"></i>تسجيل دخول</a>
+    <a class="button3"> </a>
+    <a href="#tsgel" class="button"><i class="fa-solid fa-user"></i>تسجيل </a>
+  </div>
+     <h1 id="3na">عنا</h1>
+     <p class="w9f">نؤمن دائماً بان الإستمرار في القمة للكيانات التجارية يتطلب الكثير من التطوير الدائم في الفكر , في المنهجية , في النظم العامة , في الخدمات المقدمة , في طريقة العرض , لذلك تعمل تقنية دائماً بشكل متطور بفكر ومنهجية ومجموعة من النظم الإدارية والخدمات الحديثة والمتطورة التي تسعى دائماً لهدفها في كتابة الثقافة الإلكترونية الحديثة والوصول بها لقمة مقدمي الخدمات إقليمياً  .
+
+ 
+       
+        تستمر تقنية كـ أفضل مقدم خدمات تقنية المعلومات , ابتداء من النطاقات والاستضافة والسيرفرات , وتطوير وتصميم وبرمجة المواقع الإلكترونية و المتاجر الإلكترونية , وبرمجة وتصميم تطبيقات الجوال , وخدمات التسويق الإلكتروني والإعلانات الممولة.
+        
+        </p>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
