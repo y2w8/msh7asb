@@ -16,6 +16,7 @@
       margin: 0;
     font-family: 'Tajawal', sans-serif;
     color: #f2f2f2;
+   
   }
   .button {
 --color: #00A97F;
@@ -75,7 +76,8 @@ filter: brightness(.8);
   .w9f {
       font-family: 'Tajawal', sans-serif;
     color: #f2f2f2;
-    font-size: 23px;   
+    font-size: 23px;  
+    right: 15px; 
   }
   
   .topnav {
@@ -243,7 +245,69 @@ border-radius: 50%;
  padding: 0 .2em;
  color: #2196f3;
 }
+hr.g56a5dr {
+  border: 2px solid #00A97F;
+  border-radius: 100px;
+}
+:root {
+  --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+
+select {
+  
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+ 
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  border: solid 1.5px #9e9e9e;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+  background-color: rgb(25, 26, 29);
+  background-image: none;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 5em;
+  height: 3em;
+  border-radius: 0.65rem;
+  overflow: hidden;
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: rgb(25, 26, 29);
+  border: 1.5px solid #1a73e8;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+  
+  pointer-events: none;
+}
+.select:focus {
+  outline: none;
+ border: 1.5px solid #1a73e8;
+}
+
+
+textarea {
+  resize: none;
+}
 </style>
+<script src="/pages/index.js"></script>
 <body>
   <div class="topnav">
     <a class="button2" href="/"><i class="fa-solid fa-house"></i>الرئيسية</a>
@@ -258,13 +322,26 @@ border-radius: 50%;
   </div>
      <h1 id="3na">يوسف صالح الحربي</h1>
      <p class="w9f">1/1</p>
+     <br>
+     <br>
+     <br>
+<h2>موعد انتهاء تسليم المشروع</h2>
+<p class="w9f" id="3dad"></p>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
    <div>
     <a class="button" href="http://google.com" target="_blank" >البلانك</a>
     <a class="button" href="http://google.com" target="_self" >السيلف</a>
-   </div>
-    
    
+   </div>
+   <br>
+   <br>
     <br>
+    <button class="button" disabled onclick="alert('مبروك قدرت تضغط الزر!')">أتحداك تضغط</button>
     <br>
     <br>
     <br>
@@ -272,14 +349,18 @@ border-radius: 50%;
     <br>
   
     <img src="/bacc.png">
+    <hr class="g56a5dr">
   </div>
    <p id="tmal7fd"></p>
+   <p id="tmal7fd2"></p>
+   <p id="tmal7fd3"></p>
+   <p id="tmal7fd4"></p>
    <p id="tmalft7"></p>
    <div class="input-group">
     <input required="" type="text" name="text" autocomplete="off" class="input" id="alshy">
     <label class="user-label">اسمك</label>
     <br>
-  <select id="alshy2" name="فصلك">
+  <select class="select" required autocomplete="off"  id="alshy2" name="فصلك">
     <option value="1/1">1/1</option>
     <option value="1/2">1/2</option>
     <option value="1/3">1/3</option>
@@ -287,17 +368,53 @@ border-radius: 50%;
     <option value="1/5">1/5</option>
     <option value="1/6">1/6</option>
   </select>
+
+  <input class="input" id="alshy3" type="number" min="1" max="5" step="1" value="5" >
+  <label class="">رضاك</label>
   </div>
   
    <br>
+   <textarea class="input" name="رايك" id="alshy4" cols="32" rows="12" maxlength="324" ></textarea>
+    <label class="user-label">أقتراحات</label>
+    <br>
+    <br>
+    <br>
    <button onclick="hfd()" class="button">حفظ!</button>
    <script>
-var m7fod = localStorage("m7fod")
+  
+var m7fod = localStorage.getItem("m7fod")
+
  function hfd(){
   var qrd = document.getElementById("alshy").value;
   var qrd2 = document.getElementById("alshy2").value;
-  localStorage.setItem("7fd", qrd, qrd2);
-  document.getElementById("tmal7fd").innerHTML = qrd, qrd2;
+  var qrd3 = document.getElementById("alshy3").value;
+  var qrd4 = document.getElementById("alshy4").value;
+  if (qrd3 === "1"){
+    var emo1 = "خايس";
+  }
+  if (qrd3 === "2"){
+    var emo1 = "سيئ";
+  }
+  if (qrd3 === "3"){
+    var emo1 = "جيد";
+  }
+  if (qrd3 === "4"){
+    var emo1 = "كويس";
+  }
+  if (qrd3 === "5"){
+    var emo1 = "أسطوريييييي";
+  }
+  if (qrd3 > "5"){
+    var emo1 = "أسطورييييييييييييييييييييييييييييييييييييييييييييييييييييييييييييييييييييييييييييييي";
+  }
+  localStorage.setItem("7fd", qrd);
+  localStorage.setItem("7fd2", qrd2);
+  localStorage.setItem("7fd3", qrd3);
+  localStorage.setItem("7fd4", qrd4);
+  document.getElementById("tmal7fd").innerHTML = "اسمك:" + qrd;
+  document.getElementById("tmal7fd2").innerHTML = "فصلك:" + qrd2;
+  document.getElementById("tmal7fd3").innerHTML = "رضاك عن الموقع:" + emo1;
+  document.getElementById("tmal7fd4").innerHTML = "اقتراحك:" + qrd4;
  }
  function get(){
   localStorage.getItem("m7fod");
@@ -305,6 +422,33 @@ var m7fod = localStorage("m7fod")
 
  }
 
+ var countDownDate = new Date("nov 1, 2023 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("3dad").innerHTML = days + "يوم " + hours + "ساعه "
+  + minutes + "دقيقه " + seconds + "ثانية ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("3dad").innerHTML = "EXPIRED";
+  }
+}, 1000);
    </script>
 </body>
 
